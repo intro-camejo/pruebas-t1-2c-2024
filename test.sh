@@ -82,6 +82,10 @@ for i in $(seq 1 ${#archivos_esperados[@]}); do
 done
 
 
+##Limpiamos el directorio de salidas
+rm -rf _salida_alumno
+
+
 printf "\nTests pasados: $test_passed/$test_count\n"
 
 if [ $test_passed -eq $test_count ]; then
