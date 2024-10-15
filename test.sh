@@ -20,7 +20,7 @@ function verificar_entrega {
     printf "Todos los scripts esperados están presentes.\n"
 }
 
-#verificar_entrega
+verificar_entrega
 
 #Crear directorios para las salidas
 for i in $(seq 1 ${#archivos_esperados[@]}); do
