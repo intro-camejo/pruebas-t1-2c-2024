@@ -1,6 +1,0 @@
-Manly Dan,31/12/2022,6
-Robbie Valentino,21/11/2022,21
-Bill Cipher,02/06/2022,215
-Dipper Pines,09/02/2024,12
-Soos Ramirez,21/08/2024,456
-Mabel Pines,01/09/2024,1456
