@@ -34,7 +34,7 @@ function comparar_archivos {
        # Verificar si el archivo de salida esperada está vacío y el archivo de salida obtenida no existe
     if [ ! -f "$salida_obtenida" ] && [ ! -s "$salida_esperada" ]; then
         return 0  # Prueba válida
-    elif diff -i -w "$salida_esperada" "$salida_obtenida" > /dev/null; then
+    elif diff -i -w "$salida_esperada" "$salida_obtenida" > /dev/null; then #Ignora case y espacios en blanco
         return 0  # Prueba válida
     else
         return 1  # Prueba inválida
