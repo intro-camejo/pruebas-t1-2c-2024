@@ -12,9 +12,13 @@ function verificar_entrega {
     for archivo in "${archivos_esperados[@]}"; do
         if [ ! -f "$archivo" ]; then
             printf "Falta el archivo: $archivo\n"
-            printf "Volve a realizar la entrega con todos los archivos esperados\n"
+            printf "Volvé a realizar la entrega con todos los archivos esperados\n"
 
             exit 1
+        fi
+        if [ "$(grep 'rm -r' $archivo)" == "" ]; then
+            printf "Los scripts no pueden contener 'rm -r'\n"
+            printf "Borralos y volvé a realizar la entrega\n"
         fi
     done
     printf "Todos los scripts esperados están presentes.\n"
