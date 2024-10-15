@@ -16,7 +16,7 @@ function verificar_entrega {
 
             exit 1
         fi
-        if [ "$(grep ''rm.*-r'' $archivo)" != "" ]; then
+        if [ "$(grep 'rm.*-r' $archivo)" != "" ]; then
             printf "El archivo $archivo contiene 'rm -r'\n"
             printf "Los scripts no pueden contener 'rm -r'\n"
             printf "Borralos y volvé a realizar la entrega\n"
