@@ -72,6 +72,9 @@ function correr_pruebas {
             bash "${archivos_esperados[$(($ejercicio-1))]}" "$entrada" "$salida_obtenida" >> /dev/null
         fi
         
+        salida_sin_saltos_linea_finales=$(sed -E -z 's/\n+$//g' "$salida_obtenida")
+        echo "$salida_sin_saltos_linea_finales" > "$salida_obtenida"
+
         # Comparar la salida obtenida con la esperada
         if comparar_archivos "$salida_esperada" "$salida_obtenida"; then
             printf "Test $i: OK :)\n"
