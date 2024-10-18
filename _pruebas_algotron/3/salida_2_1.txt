@@ -2,7 +2,7 @@ Manly Dan,31/12/2022,6
 Robbie Valentino,21/11/2022,21
 Bill Cipher,02/06/2022,215
 Ford Pines,17/02/2023,2
-Tambry,03/10/2023,6
+Tambry,03/10/2023,7
 Stan Pines,25/06/2023,95
 Dipper Pines,09/02/2024,12
 Soos Ramirez,21/08/2024,456
