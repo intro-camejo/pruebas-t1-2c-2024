@@ -82,7 +82,7 @@ function correr_pruebas {
             if [ $ejercicio -ne 3 ]; then
                 printf "Test $i: OK :)\n"
                 ((test_passed++))
-            elif comparar_archivos "infractores.txt" "$salida_obtenida"; then
+            elif comparar_archivos "infractores.txt" "_pruebas_algotron/3/salida_2_$i.txt"; then
                 printf "Test $i: OK :)\n"
                 ((test_passed++))
             else
