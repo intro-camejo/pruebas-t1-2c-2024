@@ -1,1 +1,1 @@
-doblarizquierdadespuesderechaatras
+doblarizquierdadespuesderechareversa
