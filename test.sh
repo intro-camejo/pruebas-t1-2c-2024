@@ -20,6 +20,7 @@ function verificar_entrega {
             printf "El archivo $archivo contiene 'rm -r'\n"
             printf "Los scripts no pueden contener 'rm -r'\n"
             printf "Borralos y volvé a realizar la entrega\n"
+
             exit 1
         fi
     done
@@ -65,17 +66,28 @@ function correr_pruebas {
         salida_esperada="_pruebas_algotron/$ejercicio/salida_$i.txt"
         salida_obtenida="_salida_alumno/$ejercicio/salida_$i.txt"
 
-        #El ejercicio 5, recibe parametros extra
+        # El ejercicio 5, recibe parametros extra
         if [ $ejercicio -eq 5 ]; then
             bash "${archivos_esperados[$(($ejercicio-1))]}" "$entrada" "${parametros_extra_punto_5[$i-1]}" "$salida_obtenida" >> /dev/null
+        # El ejercicio 3 no recibe la salida
+        elif [ $ejercicio -eq 3 ]; then
+            salida_obtenida="acertijo3.txt"
+            bash "${archivos_esperados[$(($ejercicio-1))]}" "$entrada" >> /dev/null
         else
             bash "${archivos_esperados[$(($ejercicio-1))]}" "$entrada" "$salida_obtenida" >> /dev/null
         fi
         
         # Comparar la salida obtenida con la esperada
         if comparar_archivos "$salida_esperada" "$salida_obtenida"; then
-            printf "Test $i: OK :)\n"
-            ((test_passed++))
+            if [ $ejercicio -ne 3 ]; then
+                printf "Test $i: OK :)\n"
+                ((test_passed++))
+            elif comparar_archivos "infractores.txt" "$salida_obtenida"; then
+                printf "Test $i: OK :)\n"
+                ((test_passed++))
+            else
+                printf "Test $i: ERROR :(\n"
+            fi
         else
             printf "Test $i: ERROR :(\n"
         fi
