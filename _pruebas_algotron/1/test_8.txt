@@ -1,21 +1,21 @@
-01:25 7 Pato se durmió  
-06:10 9 Pato soñó con comida  
-19:55 6 Pato trató de morder la impresora  
-14:20 1 Pato comió "Sonrisa dulce"  
-10:30 4 Pato mordió una cortina  
-17:40 3 Pato buscó más comida
-18:01 7 Pato se resbaló en el barro 
-15:15 10 Pato se acostó a pensar  
-08:45 2 Pato soñó con la gorra de Dipper  
-12:05 8 Pato se metió a un charco con agua  
-02:35 9 Pato roncó  
-13:45 7 Pato se limpió las pezuñas  
-20:10 3 Pato trató de tirar la impresora  
-07:15 1 Pato soñó con Mabel  
-18:50 2 Pato se comió una manzana  
-11:30 5 Pato se enredó en la cortina  
-03:50 4 Pato se movió dormido  
-05:00 7 Pato cambió de posición para dormir  
-09:05 8 Pato se despertó  
-16:25 6 Pato tomó agua  
-23:55 10 Pato se quedó dormido  
+02:15 7 Pato se quedó dormido
+04:20 2 Pato se despertó
+04:23 7 Pato se resbaló en el agua
+05:05 5 Pato comió una manzana
+06:25 9 Pato mordió la gorra de Dipper
+07:45 10 Pato encontró unos lentes de sol
+08:05 7 Pato se ensució las pezuñas
+09:30 1 Pato se escondió atras de un sillón
+10:15 6 Pato comió "Sonrisa Dulce"
+11:50 4 Pato se enredó en una cortina
+12:30 8 Pato trató de morder la impresora
+13:10 2 Pato trató de tirar la impresora
+14:40 10 Pato se revolcó en un charco de agua
+16:55 5 Pato salió del charco de agua
+17:45 7 Pato se limpió las pezuñas
+18:10 3 Pato tomó agua
+19:35 6 Pato volvió a tratar de morder la impresora
+20:20 1 Pato masticó una cortina
+21:00 9 Pato se durmió
+22:55 8 Pato empezó a roncar
+23:50 4 Pato se movió dormido
